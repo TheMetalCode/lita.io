@@ -20,7 +20,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.10)
     connection_pool (2.3.0)
-    contracts (0.16.1)
+    contracts (0.17)
     dotenv (2.8.1)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
@@ -146,4 +146,4 @@ DEPENDENCIES
   rake
 
 BUNDLED WITH
-   2.3.24
+   2.4.4

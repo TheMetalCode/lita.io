@@ -6,6 +6,17 @@ The site is built with [Middleman](https://middlemanapp.com/). Most of the docum
 
 Contributions of all kinds are most welcome. The goal is to make the information clear and well organized. If you find spelling or grammatical errors, please open a pull request with corrections. If you find a particular section confusing, misleading, or incomplete, please feel free to improve it or to open an issue to discuss it. Let's make Lita easy to learn and use for everyone!
 
+## CONTRIBUTING
+
+Generate a local instance of the site like so:
+
+```bash
+bundle install
+bundle exec middleman server
+```
+
+You can then browse `http://localhost:4567`
+
 ## LICENSE
 
 [MIT](http://opensource.org/licenses/MIT)

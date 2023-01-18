@@ -62,11 +62,7 @@ helpers do
 
   def subsite_link(subsite, text, url, options)
     if url.start_with?("/")
-      if app.build?
-        url = File.join("https://#{subsite}.lita.io/", url)
-      else
-        url = File.join("/#{subsite}/", url)
-      end
+      url = File.join("/#{subsite}/", url)
     end
 
     link_to(text, url, options)

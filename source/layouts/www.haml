@@ -19,7 +19,7 @@
         .navbar-text.navbar-right.hidden-xs
         %ul.nav.navbar-nav.navbar-right
           %li= docs_link 'Documentation', '/'
-          %li= www_link 'Support', '/support/'
+          %li= link_to 'Support', 'support.html'
           %li.visible-xs= plugins_link 'Plugins', '/'
     .content
       = yield

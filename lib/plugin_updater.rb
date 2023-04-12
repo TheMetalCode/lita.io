@@ -1,5 +1,6 @@
 require 'json'
 require 'faraday'
+require 'faraday/net_http_persistent'
 require 'progress'
 
 class PluginUpdater

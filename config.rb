@@ -9,7 +9,8 @@ config[:sass_assets_paths].concat([
 page '/docs/index.html', layout: :docs_outer
 page '/docs/*', layout: :docs
 page '/plugins/*', layout: :plugins
-page '/www/*', layout: :www
+page '/index.html', layout: :www
+page '/support.html', layout: :www
 
 activate :directory_indexes
 activate :lita_plugins
@@ -19,8 +20,6 @@ configure :server do
 end
 
 configure :build do
-  activate :asset_hash
-  activate :asset_host, host: 'https://static.lita.io'
   activate :minify_css
   activate :minify_javascript
 end
@@ -51,7 +50,7 @@ helpers do
   end
 
   def www_link(text, url, options = {})
-    subsite_link("www", text, url, options)
+    link_to(text, '/', options)
   end
 
   def icon(name, custom_class=nil)
@@ -62,11 +61,7 @@ helpers do
 
   def subsite_link(subsite, text, url, options)
     if url.start_with?("/")
-      if app.build?
-        url = File.join("https://#{subsite}.lita.io/", url)
-      else
-        url = File.join("/#{subsite}/", url)
-      end
+      url = File.join("/#{subsite}/", url)
     end
 
     link_to(text, url, options)

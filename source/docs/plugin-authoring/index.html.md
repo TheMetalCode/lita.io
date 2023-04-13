@@ -5,7 +5,7 @@ overview: true
 menu: plugin-authoring
 ---
 
-Lita's plugin system is used to connect with different chat services and to add new runtime behavior. This guide provides details for programmers to create their own plugins. If you're just learning about Lita, you may want to check out the [getting started](/getting-started/) guide first.
+Lita's plugin system is used to connect with different chat services and to add new runtime behavior. This guide provides details for programmers to create their own plugins. If you're just learning about Lita, you may want to check out the [getting started](/docs/getting-started/) guide first.
 
 Plugins are written in Ruby, so you'll need some familiarity with Ruby and its ecosystem of tools to write and publish a plugin. To test plugins, Lita provides some useful additions for the [RSpec](https://github.com/rspec/rspec) testing framework. It's not necessary to use them, but familiarity with RSpec will be very beneficial in testing your plugins.
 
